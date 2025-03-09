@@ -41,6 +41,3 @@ NestFind is a full-stack web application designed to simplify the process of fin
 
 ### Backend Setup
 
-1. **Navigate to the API directory:**
-   ```bash
-   cd api
