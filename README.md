@@ -37,7 +37,5 @@ NestFind is a full-stack web application designed to simplify the process of fin
 - React Quill (rich text editing)  
 - React Leaflet (interactive maps)
 
-## Installation & Setup
 
-### Backend Setup
 
