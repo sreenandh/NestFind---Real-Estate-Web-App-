@@ -1,0 +1,112 @@
+@import "../../responsive.scss";
+
+.admin-login, .admin-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Admin Login Styling */
+.admin-login {
+  form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      margin-bottom: 1rem;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* Admin Dashboard Styling */
+.admin-dashboard {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #007bff;
+      color: white;
+    }
+
+    td img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    td button {
+      padding: 8px 12px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    td button:hover {
+      background-color: #c0392b;
+    }
+  }
+}

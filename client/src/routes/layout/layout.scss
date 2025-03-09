@@ -1,0 +1,50 @@
+@import "../../responsive.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Full viewport height
+  background-color: #f9f9f9; // Match the body background color
+  color: #333;
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); // Gradient background
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    padding: 10px 20px; // Add padding for better spacing
+  }
+
+  .content {
+    flex: 1; // Allow content to take up remaining space
+    padding: 20px; // Add spacing between Navbar and content
+    overflow-y: auto; // Enable vertical scrolling only if needed
+    -ms-overflow-style: none; // Hide scrollbar for IE/Edge
+    scrollbar-width: none; // Hide scrollbar for Firefox
+    background: linear-gradient(90deg, #6a11cb, #2575fc); // Consistent gradient
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+    &::-webkit-scrollbar {
+      display: none; // Hide scrollbar for Chrome/Safari
+    }
+  }
+
+  @include lg {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  @include md {
+    max-width: 768px;
+    padding: 0 10px;
+  }
+
+  @include sm {
+    max-width: 640px;
+    padding: 0 5px;
+  }
+}

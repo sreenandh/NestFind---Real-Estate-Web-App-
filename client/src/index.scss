@@ -1,0 +1,36 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; // Prevent horizontal scrolling
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif; // Modern font
+  line-height: 1.6;
+  background-color: #f9f9f9; // Neutral background color
+  color: #333; // Default text color
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

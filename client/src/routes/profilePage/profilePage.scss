@@ -1,0 +1,96 @@
+@import "../../responsive.scss";
+
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  height: 100%; // Take full height of the parent container
+  background: linear-gradient(90deg, #6a11cb, #2575fc); // Consistent gradient
+  color: white;
+  overflow: hidden; // Prevent double scrollbars
+
+  .details {
+    flex: 1; // Take up available space
+    padding-bottom: 50px; // Add padding to prevent content cutoff
+    background-color: rgba(255, 255, 255, 0.1); // Semi-transparent background
+    border-radius: 10px;
+    margin: 20px;
+
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      @include lg {
+        padding-right: 20px;
+      }
+
+      @include md {
+        padding-right: 0;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+          font-weight: 300;
+        }
+
+        button {
+          padding: 12px 24px;
+          background-color: #fece51;
+          cursor: pointer;
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #f0c800;
+          }
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+
+        button {
+          width: 100px;
+          background-color: teal;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #006666;
+          }
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @include md {
+    flex-direction: column;
+    height: auto; // Allow height to adjust dynamically
+    overflow: visible; // Ensure no hidden content
+  }
+}
